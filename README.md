@@ -12,7 +12,7 @@ A hot and humid air mass built as air moved north from the near continent to ent
 
 Doing so will allow for a critical analysis of any discrepancy between actual maximum temperatures and predicted maximum temperatures obtained using historical temporal data. In addition, assuming statistically significant spatial correlation between temperatures across regions, techniques of spatial statistics will be used to predict maximum temperatures observed in the focus region, the South-East of England, but also interpolating temperatures for non-measurement sites across England during the heatwave. 
 
-INITIAL DATA ANALYSIS
+### Data Pre-processing
 
 Firstly, the meta-data file containing location and elevation information for each of the 20 Met Office monitoring sites is explored. The range of elevation across all sites is 842m, with the highest location being Dun Fell at 847m, and the lowest at London.  The extreme height of the Dun Fell site is an anomaly considering elevation for the remaining sites is smaller than or approximately equal to 200m. 
 
