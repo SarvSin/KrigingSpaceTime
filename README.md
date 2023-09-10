@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 _Note: This is a reproduction using historical data of a 1st-place hackathon project in collaboration with the MET Office, UK (2022)_
 
@@ -12,7 +12,7 @@ A hot and humid air mass built as air moved north from the near continent to ent
 
 Doing so will allow for a critical analysis of any discrepancy between actual maximum temperatures and predicted maximum temperatures obtained using historical temporal data. In addition, assuming statistically significant spatial correlation between temperatures across regions, techniques of spatial statistics will be used to predict maximum temperatures observed in the focus region, the South-East of England, but also interpolating temperatures for non-measurement sites across England during the heatwave. 
 
-### Data Pre-processing
+## Data Pre-processing
 
 Firstly, the meta-data file containing location and elevation information for each of the 20 Met Office monitoring sites is explored. The range of elevation across all sites is 842m, with the highest location being Dun Fell at 847m, and the lowest at London.  The extreme height of the Dun Fell site is an anomaly considering elevation for the remaining sites is smaller than or approximately equal to 200m. 
 
@@ -44,7 +44,7 @@ In Figure 4, the temperature at Lerwick up and not including October 1 is shown.
 </p>
 <h6 align="center"> Figure 4: Daily temperature at Lerwick up to Oct.1, 2020</h6>
                                                                               
-### Methods
+## Methods
 
 The prediction of max. daily temperature at Yeovilton, Leconfield, and High Wycombe, was performed using Gaussian processes and Maximum Likelihood Estimation methods. Firstly, data was wrangled to remove observations for stations where temperature was to be predicted, this wrangled data was then merged with meta data including location and elevation information, and transformed into a GeoData format. 
 
@@ -84,7 +84,7 @@ The predicted values are given in Table 1. It is clear that the predictions are 
                                                                                 
 Finally, in order to predict temperatures for London, Marham, and High Wycombe during the heatwave from 7th August, 2020 to 12th August, 2020, the previously described steps for building an appropriate model were repeated. An ARIMA(1,1,2) model was finalised for London on the basis of temperature up to but not including 7th August. The same model was then used to predict temperatures at Marham and High Wycombe for the common, targeted period. The predictions are plotted against actual observed temperatures at London, Marham, and High Wycombe in Figure 9(a)-(c). 
 
-### Results
+## Results
 
 From Figure 9(a)-(c), it is clear that not only were temperatures forecast to be lower than they ended up being, but the trend of temperatures falling on the 8th of August across all sites – London, Marham, and High Wycombe – and rising to peak around the 12th was not captured either. Given temperature data for these monitoring sites right up to the day before official beginning of heatwave, this shows that it would still not have been possible to forecast accurately either the magnitude or trend of temperatures for the week ahead. 
 This is sufficient evidence in support of forecasts being informed with data from multiple sources. Environmental changes, spatial correlations, anthropological shifts – all this and more needs to be taken in consideration when producing forecasts for temperature. Collecting and analysing this data in real-time is a mammoth, but crucial task. 
@@ -106,7 +106,7 @@ From the spatial interpolation of temperatures in England during the heatwave, i
 <img align="center" width="852" alt="Screenshot 2023-09-10 at 17 34 24" src="https://github.com/SarvSin/KrigingSpaceTime/assets/117599272/29171a46-251a-4073-aac1-f158de9123b1">
 </p>
 
-### Summary
+## Summary
 
 Due to its chaotic and non-linear character, temperature is a difficult physical phenomenon to forecast. Yet considering the significant damage due to extreme changes in temperature to flora and fauna, and significant impact on multiple economic sectors such as agriculture, energy, and manufacturing, the accuracy of air temperature forecasts is even more important. In particular, predicting the severity, time-span, and extent of spatial dispersion of such phenomena as heatwaves is highly dependent on accurate temperature prediction.
 
