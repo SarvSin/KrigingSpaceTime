@@ -1,11 +1,11 @@
-# 505 PART C!!
+
 
 library(dplyr)
 library(magrittr)
 library(geoR)
 
 # Reading in the metadata file including elevation and location data
-meta_data <- read.csv('/Users/sarveshwarisingh/Desktop/505 stuff/metadata.csv')
+meta_data <- read.csv('/Users/....csv')
 meta_data
 
 # Initial data analysis
